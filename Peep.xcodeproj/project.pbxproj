@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8FB4746521A53153003BD0AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4746421A53153003BD0AB /* AppDelegate.swift */; };
-		8FB4746721A53153003BD0AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4746621A53153003BD0AB /* ViewController.swift */; };
 		8FB4746A21A53153003BD0AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4746821A53153003BD0AB /* Main.storyboard */; };
 		8FB4746C21A53157003BD0AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4746B21A53157003BD0AB /* Assets.xcassets */; };
 		8FB4746F21A53157003BD0AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4746D21A53157003BD0AB /* LaunchScreen.storyboard */; };
 		8FB4747A21A53157003BD0AB /* PeepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4747921A53157003BD0AB /* PeepTests.swift */; };
 		8FB4748521A53157003BD0AB /* PeepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4748421A53157003BD0AB /* PeepUITests.swift */; };
+		8FB4749721A5386C003BD0AB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4749621A5386C003BD0AB /* SettingsViewController.swift */; };
+		8FB4749921A54781003BD0AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4749821A54781003BD0AB /* Constants.swift */; };
+		8FB4749B21A6B21D003BD0AB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4749A21A6B21D003BD0AB /* RootViewController.swift */; };
+		8FB4749D21A6BCF3003BD0AB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4749C21A6BCF3003BD0AB /* CameraViewController.swift */; };
+		8FB4749F21A94683003BD0AB /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4749E21A94683003BD0AB /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		8FB4746121A53153003BD0AB /* Peep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB4746421A53153003BD0AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FB4746621A53153003BD0AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8FB4746921A53153003BD0AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FB4746B21A53157003BD0AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FB4746E21A53157003BD0AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		8FB4748021A53157003BD0AB /* PeepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB4748421A53157003BD0AB /* PeepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeepUITests.swift; sourceTree = "<group>"; };
 		8FB4748621A53157003BD0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB4749621A5386C003BD0AB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8FB4749821A54781003BD0AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8FB4749A21A6B21D003BD0AB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		8FB4749C21A6BCF3003BD0AB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		8FB4749E21A94683003BD0AB /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,8 @@
 		8FB4746321A53153003BD0AB /* Peep */ = {
 			isa = PBXGroup;
 			children = (
-				8FB4746421A53153003BD0AB /* AppDelegate.swift */,
-				8FB4746621A53153003BD0AB /* ViewController.swift */,
+				8FB4749321A53532003BD0AB /* App + Views */,
+				8FB4749521A53559003BD0AB /* Helpers */,
 				8FB4746821A53153003BD0AB /* Main.storyboard */,
 				8FB4746B21A53157003BD0AB /* Assets.xcassets */,
 				8FB4746D21A53157003BD0AB /* LaunchScreen.storyboard */,
@@ -123,6 +131,26 @@
 				8FB4748621A53157003BD0AB /* Info.plist */,
 			);
 			path = PeepUITests;
+			sourceTree = "<group>";
+		};
+		8FB4749321A53532003BD0AB /* App + Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4746421A53153003BD0AB /* AppDelegate.swift */,
+				8FB4749A21A6B21D003BD0AB /* RootViewController.swift */,
+				8FB4749C21A6BCF3003BD0AB /* CameraViewController.swift */,
+				8FB4749E21A94683003BD0AB /* ResultsViewController.swift */,
+				8FB4749621A5386C003BD0AB /* SettingsViewController.swift */,
+			);
+			name = "App + Views";
+			sourceTree = "<group>";
+		};
+		8FB4749521A53559003BD0AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4749821A54781003BD0AB /* Constants.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FB4746721A53153003BD0AB /* ViewController.swift in Sources */,
 				8FB4746521A53153003BD0AB /* AppDelegate.swift in Sources */,
+				8FB4749D21A6BCF3003BD0AB /* CameraViewController.swift in Sources */,
+				8FB4749721A5386C003BD0AB /* SettingsViewController.swift in Sources */,
+				8FB4749B21A6B21D003BD0AB /* RootViewController.swift in Sources */,
+				8FB4749921A54781003BD0AB /* Constants.swift in Sources */,
+				8FB4749F21A94683003BD0AB /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +465,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBZ92G5E7Y;
 				INFOPLIST_FILE = Peep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +484,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBZ92G5E7Y;
 				INFOPLIST_FILE = Peep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
